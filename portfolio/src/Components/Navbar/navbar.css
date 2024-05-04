@@ -1,0 +1,58 @@
+
+header {
+    font-family: var(--nav-font);
+    font-size: var(--navFont-size);
+}
+
+
+.navbar-brand {
+    object-fit: cover;
+    
+
+}
+
+.navbar-toggler {
+   border: 2px solid white;
+}
+
+.navbar-toggler-icon {
+    color: black;
+    background-color: rgb(111, 209, 26);
+    border-radius: 8px;
+}
+
+.navbar-nav a {
+    margin-right: 3rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navbar .container .navbtn {
+    color: black;
+    background: white;
+    padding-top: 0.35rem;
+    font-weight: 500;
+    border-radius: 6rem;
+    letter-spacing: 1px;
+    padding-bottom: 0.35rem;
+    padding-left: 2.5rem;
+    padding-right: 0.35rem;
+    position: relative;
+    
+}
+
+.sms-icon {
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    
+}
+.navbar-nav a:hover {
+    color: yellow;
+    padding-bottom: 0.35rem;
+    border-bottom: 3px solid yellow;
+}
+

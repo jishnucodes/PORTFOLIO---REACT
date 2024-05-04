@@ -1,0 +1,36 @@
+.contact-section .contact-container .header h1 {
+    font-family: var(--lg-font);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-section .contact-container .info p {
+    font-family: var(--sm-font);
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    text-wrap: wrap;
+}
+
+.contact-section .contact-container .form-container form input {
+    background-color: rgb(42, 38, 38);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact-section .contact-container .form-container form textarea {
+    background-color: rgb(42, 38, 38);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact-section .contact-container .form-container form .submit-button button {
+    padding: 0.75rem 3.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+}

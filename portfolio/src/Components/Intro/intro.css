@@ -1,0 +1,52 @@
+.intro-content {
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+}
+
+.intro-content .left-section span {
+    font-size: var(--sm-size);
+    font-family: var(--sm-font);
+    letter-spacing: 1px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.intro-content .left-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--lg-font);
+}
+
+.intro-content .left-section .name {
+    color: yellow;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.intro-content .left-section p {
+    font-family: var(--sm-font);
+    font-size: 18px;
+    text-wrap: wrap;
+}
+.intro-content .left-section button {
+    padding: 0.25rem 0.75rem;
+    background-color: gray;
+    color: black;
+    font-family: var(--sm-font);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.profile {
+    width: 100%;
+
+}
+.profile img {
+    width: 400px;
+    height: auto;
+    border-radius: 2rem;
+}

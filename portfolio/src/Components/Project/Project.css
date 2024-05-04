@@ -1,0 +1,64 @@
+.project-section .header h1{
+    font-family: var(--lg-font);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.project-section .para p {
+    font-family: var(--sm-font);
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    text-wrap: wrap;
+}
+
+.project-section .project-list h2 {
+    font-family: var(--lg-font);
+    font-size: 29px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid red;
+    border-radius: 5px;
+    width: 190px;
+}
+
+.project-section .project-list .card .card-body {
+    background-color: #202c37;
+    color: white;
+}
+
+.project-section .project-list .card .card-title {
+    font-family: var(--lg-font);
+    font-weight: 500;
+}
+
+.project-section .project-list .card  .card-text {
+    font-family: var(--sm-font);
+    letter-spacing: 1px;
+}
+
+.project-section .project-list .card .show-button {
+    color: white;
+    background-color: red;
+    padding: 0.35rem 0.65rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.project-section .project-list .card .show-button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.project-section .other-project .card {
+    width: 150px;
+    height: 280px;
+
+}
+
+.project-section .other-project .card .card-title {
+    font-family: var(--lg-font);
+    font-weight: 600;
+}

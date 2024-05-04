@@ -1,0 +1,22 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+ }
+
+ :root {
+   --nav-font: "Poppins", sans-serif;
+   --lg-font: "Lato", sans-serif;
+   --sm-font: "Open Sans", sans-serif;
+   --lg-size: 25px;
+   --sm-size: 20px;
+   --navFont-size: 18px;
+ }
+
+ body {
+    background: rgb(30, 30, 30);
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+ }
