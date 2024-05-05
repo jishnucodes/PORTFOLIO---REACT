@@ -2,22 +2,36 @@ import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 
 import './Contact.css'
+import axios from '../../axios/axios';
 
 const Contact = () => {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [content, setContent] = useState("");
+    const [info, setInfo] = useState("");
+    const [subject, setSubject] = useState("");
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
         const formData = new FormData();
         formData.append("name", name)
         formData.append("email", email)
-        formData.append("content", content)
+        formData.append("subject", subject)
+        formData.append("info", info)
 
         console.log(formData)
+
+        try {
+            const response = await axios.post('/send-email', formData,{
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            console.log(response.data)
+        } catch (error) {
+            console.log(error)
+        }
     }
     return (
         <div className='contact-section py-5'>
@@ -39,22 +53,30 @@ const Contact = () => {
                                className='mt-3 px-3 py-3 w-100'
                                value={name}
                                onChange={(event) => setName(event.target.value)} 
-                            />
+                            />{name}
                             <input 
-                               type="text"
+                               type="email"
                                name='email' 
                                placeholder='Your Email' 
                                className='mt-3 px-3 py-3 w-100'
                                value={email} 
                                onChange={(event) => setEmail(event.target.value)}
+                            />{email}
+                             <input 
+                               type="text"
+                               name='subject' 
+                               placeholder='Subject' 
+                               className='mt-3 px-3 py-3 w-100'
+                               value={subject} 
+                               onChange={(event) => setSubject(event.target.value)}
                             />
                             <textarea 
                                placeholder='Your Message' 
                                rows={8} 
-                               name='content'
+                               name='info'
                                className='mt-3 px-3 py-3 w-100'
-                               value={content}
-                               onChange={(event) => setContent(event.target.value)}
+                               value={info}
+                               onChange={(event) => setInfo(event.target.value)}
                             >
                             </textarea>
                             <div className="submit-button mt-4">
